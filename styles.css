@@ -1,0 +1,35 @@
+.head-bar{
+  background: linear-gradient(-90deg, #323387, #3b93db);
+    height: 60px;
+    margin-bottom: 15px;
+}
+.add-task{
+    border-bottom-color: Black;
+    padding: 5px;
+}
+h1{
+  margin: 10px 20%  ;
+
+}
+ul{
+  margin: 20px;
+}
+li{
+  padding: 6px;
+}
+p{
+  padding: 15px;
+}
+input{
+  margin: 20px ;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
