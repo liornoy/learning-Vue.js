@@ -12,18 +12,28 @@
   <body>
     <div class = "head-bar"></div>
     <div id = "vue-app">
-      <h1>Welcome to Task Manager</h1>
-
-      <input v-model="message" placeholder="Add new task">
+        <h1 align="center">Welcome to Task Manager</h1>
+        <div align="center">
+      <input  v-model="message" placeholder="Add new task" >
       <button v-on:click="enterTask" class="btn btn-primary"> Add </button></input>
-      <p v-if="!tasks.length">There are no tasks yet.</p>
-      <ul>
-          <li v-for="(task, index) in tasks" :key="index">{{task}}
-            <button v-on:click="deleteTask(index)" class= "btn btn-outline-primary btn-sm"> Complete </button>
-        <button v-on:click="deleteTask(index)" class="btn btn-danger btn-sm"> Delete </button>
-               <hr></li>
-      </ul>
-  </div>
+        </div>
+        <div class = "split left">
+          <h3> TO-DO</h3>
+          <p v-if="!tasks.length">There are no tasks yet.</p>
+        <ul>
+            <li v-for="(task, index) in tasks" :key="index">{{task}}
+              <button v-on:click="completes(index)" class= "btn btn-outline-primary btn-sm"> Complete </button>
+          <button v-on:click="deleteTask(index)" class="btn btn-danger btn-sm"> Delete </button>
+                 <hr></li>
+        </ul>
+      </div>
+          <div class = "split right">
+                <h3> Completed</h3><h6> {{long}} tasks completed</h6>
+                <p class = "c">{{complet}}</p>
+
+           </div>
+         </div>
+
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
 <script src="app.js"></script>

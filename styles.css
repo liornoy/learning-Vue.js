@@ -7,12 +7,25 @@
     border-bottom-color: Black;
     padding: 5px;
 }
-h1{
-  margin: 10px 20%  ;
 
+h3, h6{
+  padding: 10px;
+  margin: 10px;
+}
+
+.right{
+  background-color: LightGreen;
+    right: 0;
+}
+.left{
+  background-color: LightBlue;
+    left: 0;
 }
 ul{
   margin: 20px;
+}
+.c{
+  text-decoration: line-through;
 }
 li{
   padding: 6px;
@@ -32,4 +45,14 @@ input{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
